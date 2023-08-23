@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#map {
+  height: 100vh;
+}
+
+aside {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  left: 10px;
+  top: 0;
+  z-index: 10000;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(43, 41, 41, 0.612);
+  color: white;
+  height: 75vh;
+  transition: all 0.2s;
+  border-radius: 10px;
+  padding: 20px;
+}
+.sidebar h1 {
+  text-align: center;
+  margin: 10px 0 20px;
+  background: rgb(67, 66, 66);
+  padding: 3px;
+  border-radius: 10px;
+  letter-spacing: 5px;
+}
+
+.sidebar:hover {
+  background: rgb(12, 12, 12);
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field input,
+.field select {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  background: black;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+/* ---liste alani-- */
+ul {
+  overflow: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+ul::-webkit-scrollbar {
+  background: black;
+  width: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: rgb(98, 90, 93);
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(68, 69, 69);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+li div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+li div p span {
+  font-weight: bold;
+}
+
+li i {
+  cursor: pointer;
+  font-size: 23px;
+  transition: all 0.3s;
+}
+li i:hover {
+  color: rgb(232, 42, 8);
+  transform: rotate(-30deg);
+}
